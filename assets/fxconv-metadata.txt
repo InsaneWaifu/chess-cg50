@@ -1,0 +1,4 @@
+pieces.png:
+  type: bopti-image
+  name: pieces_map
+

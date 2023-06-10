@@ -1,0 +1,4 @@
+example.png:
+  type: bopti-image
+  name: img_example
+
