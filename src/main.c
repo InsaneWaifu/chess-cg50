@@ -51,6 +51,8 @@ void renderpiece(char piece, int x, int y) {
 #define MIN(a, b) a>b?b:a
 #define MAX(a, b) a>b?a:b
 
+
+
 void renderboard(SCL_Game* game, char sel_rank, char sel_file, int attempting_move, const SCL_SquareSet* highlight) {
 	dclear(C_WHITE);
 	const char size=28;
@@ -65,9 +67,9 @@ void renderboard(SCL_Game* game, char sel_rank, char sel_file, int attempting_mo
 				col = C_BLUE;
 			else
 				if ((rank + file) % 2 != 0)
-					col = C_RED;
+					col = C_RGB(26, 26, 20);
 				else
-					col = C_WHITE;
+					col = C_RGB(16, 20, 12);
 			
 			
 			drect(size*file, DHEIGHT-size*rank, size*file + size, DHEIGHT-(size*rank + size), col);
