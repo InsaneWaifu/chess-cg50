@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include <time.h>
 
 #define SCL_EVALUATION_FUNCTION SCL_boardEvaluateStatic
 
@@ -262,7 +263,7 @@ uint8_t randfunc() {
 }
 
 void vsai() {
-
+	srand(time(NULL)); // seed random
 	// choose white or black
 	dclear(C_WHITE);
 	dtext(0, 0, C_BLACK, "Press left to be white, press right to be black.");
